@@ -6,6 +6,41 @@
 		<title> Blogue </title>
 		<link rel="icon" href="cours.ico">
 		<style>	
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: grey;
+}
+
+.collapsible:after {
+  content: '\0025BD';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\0025B3";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
 body{
 font-size: 12px;
 font-family: "courier new";
@@ -25,7 +60,7 @@ flex: 1 1 auto
 		<center>
 		<br>
 		<br>
-		<div class="content" style="width:50%; line-height: 1.5;background-color:white; padding: 20px;border:solid;border-width:5px; border-color: grey;">
+		<div class="main" style="width:50%; line-height: 1.5;background-color:white; padding: 20px;border:solid;border-width:5px; border-color: grey;">
 
 			<h1> Blogue  </h1>
 			<hr>
@@ -55,21 +90,32 @@ flex: 1 1 auto
 					<br>
 			</p>
 			<p>
-			<h2> <img src="tuto.ico"> Tuto 1 </h2>
-			<p>
-					Comment exporter un clip depuis flipnote :
-					<br>
-					<br>
-					1.
-					<br>
-					2.
-					<br>
-					3.
-					<br>
-					
-			</p>
-	
-			</p>
+			<h2> <img src="tuto.ico"> Notes: </h2>
+			
+				<button class="collapsible" style=font-family: "courier new";>11/08/2025: tuto flipnote </button>
+				<div class="content">
+				  <p><strong>Comment exporter une vidéo flipnote vers un ordinateur:</strong>
+				  <br>
+				  <br>
+				  <strong>1.</strong>  Insérer une carte SD (ou micro SD + adaptateur, ça fonctionne aussi) dans la DSi
+				  <br>
+				  <strong>2.</strong> Lors de la sauvegarde de la flipnote, séléctionner "autre" puis "carte SD"
+				  <br>
+				  <strong>3.</strong> Ensuite, il faut retrouver le fichier sur la carte SD en l'insérant dans votre ordinateur; normalement le chemin à suivre est : <i> private>
+				  ds>app>4B475545>001</i>; et votre flipnote s'y trouve au format <i> .ppm </i>
+				  <br>
+				  <strong>4.</strong>  Pour convertir le <i> .ppm </i> en un fichier vidéo lisible des logiciels et sites existent tels que <a href="https://flipnote.rakujira.jp" style="text-decoration:none; color:black;"> <strong> Flipnote Player </strong> </a>.
+				  <br>
+				  </p>
+				</div>
+				<button class="collapsible" style=font-family: "courier new";>Note 2</button>
+				<div class="content">
+				  <p>blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla.</p>
+				</div>
+				<button class="collapsible" style=font-family: "courier new";>Note 3</button>
+				<div class="content">
+				  <p>blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla</p>
+				</div>
 			<p>
 			<img src="traveaux.ico"> PAGE EN CONSTRUCTION
 			</p>
@@ -84,5 +130,22 @@ flex: 1 1 auto
 		</div>
 		</center>
 		
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
 	</body>
 </html>
