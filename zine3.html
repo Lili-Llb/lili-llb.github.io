@@ -2,56 +2,74 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<link href="style.css" rel="stylesheet" type="text/css" />
-		<title>Zines</title>
-		<link rel="icon" href="zine.ico">
+		<link href="style2.css" rel="stylesheet" type="text/css" />
+		<title> Zines </title>
+		<link rel="icon" href="zines.ico">
 		<style>	
- .zoom {
-width:50%;
-text-align:center;
-}
-.zoom img {
-width:50%;
--webkit-transition: 0.5s; 
-transition: 0.5s;
+body{
+font-size: 12px;
+font-family: "courier new";
 }
 
-.zoom img:hover {
-width:60%;
-
+.menu{
+display: flex
+}
+.contenu{
+flex: 1 1 auto
 }
 
       </style>
 	</head>
-	<body>
+	<body style="background-image: url(test.ico);">
 
-		<div class="gauche">
+		<center>
+		<br>
+		<br>
+		<div class="content" style="width:60%; line-height: 1.5;background-color:white; padding: 20px;border:solid;border-width:5px; border-color: grey;">
 
-				<a href="index.html" style="text-decoration:none; color:black;" > <img src="accueil.ico" alt="a"> Retour accueil </a> 
-				<br>
-				<br>
-				<strong><hr></strong>
-				<br>
-				Autres zines:
-					<ul>
-          
-					  <li> <a href="zine1.html" style="text-decoration:none; color:black;"> Zine n°1 </a> </li>
-					  <li> <a href="zine2.html" style="text-decoration:none; color:black;"> Zine n°2 </a> </li>
-					  <li> <a href="zine3.html" style="text-decoration:none; color:black;"> Zine n°3 </a> </li>
-				  
-					</ul>
-				
-		</div>		
-
+			<h1> Zines  </h1>
+			
+			<div class="menu">
+			<div class="contenu" style="border-right:solid;"> accueil </div>
+			<div class="contenu" style="border-right:solid;"> dessin </div>
+			<div class="contenu" style="border-right:solid;"> <strong> zines </strong> </div>
+			<div class="contenu" style="border-right:solid;"> linogravure </div>
+			<div class="contenu" style="border-right:solid;"> publications  </div>
+			<div class="contenu" style="border-right:solid;"> blogue </div>
+			<div class="contenu" style="border-right:solid;">  liens  </div>
+			</div>
+			
+			<hr>
+			
+			<div class="menu">
+			<div class="contenu" > <a href="index.html" alt="retour à l'accueil du site"> <img src="accueil.ico" style="padding-right: 15px;"> </a> </div>
+			<div class="contenu"> <a href="2025.html" title="aller vers les illustrations"> <img src="illu.ico"style="padding-right: 15px;"> </a> </div>
+			<div class="contenu"> <a href="zine1.html" alt="aller vers les zines"> <img src="zine.ico"style="padding-right: 15px;"> </a> </div>
+			<div class="contenu"> <a href="note1.html" alt="linogravure !"> <img src="lino.ico"style="padding-right: 15px;"> </a> </div>
+			<div class="contenu"> <a href="clip.html" alt="aller vers les clips"> <img src="publi2.ico"style="padding-right: 15px; width:40px;"> </a> </div>
+			<div class="contenu"> <a href="blogue.html" alt="retour vers le blogue"> <img src="cours.ico" style="padding-right: 15px;"> </a> </div>
+			<div class="contenu"> <a href="liens.html" alt="sites utiles pour trouver livres, musiques, ..."> <img src="lien.ico"style="padding-right: 15px;"> </a> </div>
+			</div>
+			
+			<hr>
+			<div class="menu">
+			<i style="font-size: 11px;"> zines : </i>
+			<div class="contenu" style="border-right:solid;"> <a href="zine1.html" style="text-decoration:none; color:black;" > <i> Weekend à Tonnerre </i> </a> </div>
+			<div class="contenu" style="border-right:solid;"> <a href="zine2.html" style="text-decoration:none; color:black;" > <i> Fais ta vaisselle ... </i>  </div>
+			<div class="contenu" style="border-right:solid;"> <a href="zine3.html" style="text-decoration:none; color:black;" > <strong> <i> Rêveries </i></strong> </a> </div>
+			</div>
+			<hr>
+			
+			<br>
+		<div style="text-align:justify">
+			
 		
-		<div class="content">
-
-		 <h1> <img src="zine.ico" alt="illu"> Zine : Rêveries </h1>
+				<center> Rêveries : extraits illustrés de mon journal de rêves  </center>
 			<hr>
 			<br>
 			<center>
 			<iframe
-			  id="zine3
+			  id="zine3"
 			  title="zine3"
 			  width="80%"
 			  height="900px"
@@ -61,15 +79,18 @@ width:60%;
 			</center>
 			<br>
 			<center>
-			Pour télécharger le zine en pdf, cliquer <a href="zine/ZINE3.pdf" style="text-decoration:none; color:black;" target="_blank"> <strong>ici</strong> </a>
+			Pour télécharger le zine en pdf, cliquer <a href="zine/ZINE1.pdf" style="text-decoration:none; color:black;" target="_blank"> <strong>ici</strong> </a>
 			</center>
 			<br>
-          
-        <hr>
-    <p> <center> contact: <a href="mailto:lililebail@laposte.net">lililebail@laposte.net</a> | page créée le 07/03/2025 | hébergée par <a href="https://github.com/" style="text-decoration:none; color:black;">github.io</a> | <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="text-decoration:none; color:black;"> site et contenu sous licence CC BY-SA 4.0 </a> | <a href="apropos.html" style="text-decoration:none; color:black;"> A PROPOS </a> </center>
-    </p>
-
-
+					
+			
+		</div>
+			<br>
+			<hr>
+			<center><p> contact: <a href="mailto:lililebail@laposte.net">lililebail@laposte.net</a> | page créée le 07/03/2025 | hébergée par <a href="https://github.com/" style="text-decoration:none; color:black;" target="_blank">github.io</a> | <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="text-decoration:none; color:black;" target="_blank"> site et contenu sous licence CC BY-SA 4.0 </a> | <a href="apropos.html" style="text-decoration:none; color:black;"> <strong> A PROPOS </strong></a> </center>
+		</p>
+		</div>
+		</center>
 		
 	</body>
 </html>
